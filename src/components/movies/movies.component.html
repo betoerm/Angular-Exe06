@@ -1,0 +1,6 @@
+<div>
+  <title-component></title-component>
+  <search-component (SearchMovie)="onSearchMovie($event)"> </search-component>
+  <thumb-movie *ngFor="let movie of moviesList" [movieItem]="movie">
+  </thumb-movie>
+</div>
